@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8f5" />
+  <title>За тебе ❤️ | Новогодишно изненадување</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="snow" id="snow" aria-hidden="true"></div>
+  <main class="shell">
+    <section class="scene active" id="scene-0" aria-label="Почеток">
+      <div class="ornament">🎀</div>
+      <h1>Имам едно мало<br><em>изненадување...</em></h1>
+      <p class="description">Пред да започне новата година, сакам да ти кажам нешто посебно. ❤️</p>
+      <button class="primary" data-next>Отвори го изненадувањето <span>♡</span></button>
+    </section>
+    <section class="scene" id="scene-1" aria-label="Подарок">
+      <h2>Еден подарок за тебе 🎁</h2>
+      <p class="description">Кликни на подарокот за да откриеш што се крие внатре.</p>
+      <button class="gift" id="gift" aria-label="Отвори го подарокот"><span>🎁</span></button>
+      <p class="reveal" id="gift-text" hidden>Најубавиот дел од оваа година беше што те запознав тебе . ❤️</p>
+      <button class="primary next-after" data-next hidden>Продолжи →</button>
+    </section>
+    <section class="scene" id="scene-3" aria-label="Причини">
+      <h2>Три мали вистини!</h2>
+      <div class="heart-grid">
+        <button class="heart-card" data-message="Секој обичен ден со тебе станува посебен!">♥ <small>1</small></button>
+        <button class="heart-card" data-message="Се заљубив во тебе, кога не планирав🐮!">♥ <small>2</small></button>
+        <button class="heart-card" data-message="Се било подобро со тебе и ќе продолжи да биди!">♥ <small>3</small></button>
+      </div>
+      <p class="heart-message" id="heart-message" aria-live="polite">Кликни на сите срца ♡</p>
+      <button class="primary" data-next>Отвори го писмото →</button>
+    </section>
+    <section class="scene" id="scene-4" aria-label="Писмо">
+      <h2>Неколку зборови од срце</h2>
+      <button class="envelope" id="envelope" aria-label="Отвори го писмото">💌<span>Притисни за да го отвориш</span></button>
+      <div class="letter" id="letter" hidden>
+        <h3>Теле мое,🐄</h3>
+        <p>Можеби ти имам кажано дека кога те запознав и кога ме праша за да
+          бидиме заедно не бев спремна и ми беше страв како ќе биди, но
+          сепак прифатив!
+        <p>Можеби немаме поминато многу, само неколку месеци сме заедно,
+          но сепак од ден во ден се повеќе и повеќе се заљубувам во тебе!<p>
+        <p>Ти благодарам за секој момент кога беше покрај мене и во
+        моите тешки денови и кога не знаев што со себе.
+        Фала ти што ме поддржуваше за се досега! </p>
+        <p>Ти благодарам за сите моменти што ги создадовме заедно, за
+          сите мали и големи спомени и за лојалноста што ми ја
+          даваш секој ден</p>
+        <p>Се надевам дека новата година ќе ни донесе уште многу убави
+          заеднички денови💕</p>
+        <p class="signature">Kiscee, 💋</p>
+      </div>
+      <button class="primary next-after" data-next hidden>Последно изненадување →</button>
+    </section>
+    <section class="scene" id="scene-5" aria-label="Честитка">
+      <div class="ornament">✨</div>
+      <p class="eyebrow">За сите наши утре</p>
+      <h1>Среќна Нова<br><em>година, љубов!</em></h1>
+      <p class="description">Нека ни биде исполнета со смеа, љубов и уште многу заеднички спомени.</p>
+      <div class="final-heart">♥</div>
+      <button class="secondary" id="restart">Погледни од почеток ↻</button>
+    </section>
+    <footer><span id="progress">01 / 06</span><span>Направено со љубов ♡</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
